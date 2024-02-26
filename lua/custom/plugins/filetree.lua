@@ -27,14 +27,6 @@ return {
         enabled = true, -- This makes Neo-tree follow the current file.
       }
     },
-    event_handlers = {
-      {
-        event = "file_opened",
-        handler = function(file_path)
-          require("neo-tree").focus_on_file(file_path, false)
-        end,
-      },
-    },
   })
   end,
 }
